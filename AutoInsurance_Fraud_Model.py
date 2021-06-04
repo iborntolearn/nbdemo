@@ -16,12 +16,6 @@
 # 
 # !nbdiff dc4fcdf4ee985b8945a8b2decd7dda1dc6305166 ddcfa3d6be3bf53523925abf96f4e597b9d9fc44
 
-# In[5]:
-
-
-1
-
-
 # ## 1. Model Information
 
 # ### 1.1 Initialize metadata
@@ -85,20 +79,20 @@ pd.set_option('display.max_rows', 500)
 # )
 # df.shape
 
-# In[2]:
+# In[4]:
 
 
 def read_data(inpath):
     return pd.read_csv(inpath)
 
 
-# In[3]:
+# In[5]:
 
 
 df = read_data('s3://ins-data-lake/insfiles/insurance_claims.csv')
 
 
-# In[4]:
+# In[6]:
 
 
 df.head()
