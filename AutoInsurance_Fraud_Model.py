@@ -79,17 +79,23 @@ pd.set_option('display.max_rows', 500)
 # )
 # df.shape
 
-# In[4]:
+# In[2]:
 
 
 def read_data(inpath):
     return pd.read_csv(inpath)
 
 
-# In[5]:
+# In[3]:
 
 
 df = read_data('s3://ins-data-lake/insfiles/insurance_claims.csv')
+
+
+# In[4]:
+
+
+df.head()
 
 
 # ## 4. Exploratory Data Analysis 
