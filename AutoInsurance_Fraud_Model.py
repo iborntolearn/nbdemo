@@ -16,6 +16,12 @@
 # 
 # !nbdiff dc4fcdf4ee985b8945a8b2decd7dda1dc6305166 ddcfa3d6be3bf53523925abf96f4e597b9d9fc44
 
+# In[5]:
+
+
+1
+
+
 # ## 1. Model Information
 
 # ### 1.1 Initialize metadata
