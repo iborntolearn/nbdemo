@@ -20,7 +20,7 @@
 
 # ### 1.1 Initialize metadata
 
-# In[1]:
+# In[3]:
 
 
 initialize_metadata()
@@ -31,7 +31,7 @@ initialize_metadata()
 # * 			Please ensure the 'Create Workspace' button is clicked.
 # * 			For more information, please refer to the User Guide.
 
-# In[2]:
+# In[4]:
 
 
 enter_metadata_information(1)
@@ -41,7 +41,7 @@ enter_metadata_information(1)
 # * 			The following cell can be used to import all the required python packages.
 # * 			Please import the `gr` package to use the pre-defined models and functionalities. 			For more information, please refer to the User Guide.
 
-# In[3]:
+# In[5]:
 
 
 #imports 
@@ -79,23 +79,23 @@ pd.set_option('display.max_rows', 500)
 # )
 # df.shape
 
-# In[4]:
+# In[6]:
 
 
 def read_data(inpath):
     return pd.read_csv(inpath)
 
 
-# In[5]:
+# In[7]:
 
 
 df = read_data('s3://ins-data-lake/insfiles/insurance_claims.csv')
 
 
-# In[6]:
+# In[8]:
 
 
-df.head()
+df.head(2)
 
 
 # ## 4. Exploratory Data Analysis 
@@ -103,10 +103,10 @@ df.head()
 # * 			After fetching details to `pandas.dataframe df`, please execute the shell to get the data analysis report. 
 # * 			<div style='font-size:15px; font-weight: bold'>Warning** : This is not recommended for a huge dataset as it may take a longer time to generate the report.</div>
 
-# In[ ]:
+# In[7]:
 
 
-exploratory_data_analysis(df)
+exploratory_data_analysis(df.head(10))
 
 
 # ### Data Cleansing
