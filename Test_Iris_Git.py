@@ -26,13 +26,13 @@ initialize_metadata()
 # * 			Please ensure the 'Create Workspace' button is clicked.
 # * 			For more information, please refer to the User Guide.
 
-# In[8]:
+# In[43]:
 
 
-metadata_dict['modelcode']='MC7'
+metadata_dict['modelcode']='MC8'
 
 
-# In[9]:
+# In[44]:
 
 
 enter_metadata_information(1)
