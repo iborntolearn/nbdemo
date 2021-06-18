@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+#git test2
 # <div style='font-size:30px; color:green; font-weight: bold; margin-bottom: 20px'>Model Builder Template</div> 
 #  			<div style='font-size:25px; font-weight: bold'>Overview</div>
 # 
@@ -26,13 +26,13 @@ initialize_metadata()
 # * 			Please ensure the 'Create Workspace' button is clicked.
 # * 			For more information, please refer to the User Guide.
 
-# In[8]:
+# In[43]:
 
 
-metadata_dict['modelcode']='MC7'
+metadata_dict['modelcode']='MC8'
 
 
-# In[9]:
+# In[44]:
 
 
 enter_metadata_information(1)
