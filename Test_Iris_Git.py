@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-#git test2
+
 # <div style='font-size:30px; color:green; font-weight: bold; margin-bottom: 20px'>Model Builder Template</div> 
 #  			<div style='font-size:25px; font-weight: bold'>Overview</div>
 # 
@@ -15,10 +15,16 @@
 
 # ### 1.1 Initialize metadata
 
-# In[6]:
+# In[3]:
 
 
 initialize_metadata()
+
+
+# In[ ]:
+
+
+#new insertion
 
 
 # ### 1.2 Meta data Information
@@ -26,13 +32,13 @@ initialize_metadata()
 # * 			Please ensure the 'Create Workspace' button is clicked.
 # * 			For more information, please refer to the User Guide.
 
-# In[43]:
+# In[10]:
 
 
-metadata_dict['modelcode']='MC8'
+metadata_dict['modelcode']='MC12'
 
 
-# In[44]:
+# In[11]:
 
 
 enter_metadata_information(1)
@@ -42,7 +48,7 @@ enter_metadata_information(1)
 # * 			The following cell can be used to import all the required python packages.
 # * 			Please import the `gr` package to use the pre-defined models and functionalities. 			For more information, please refer to the User Guide.
 
-# In[39]:
+# In[9]:
 
 
 #imports 
@@ -50,6 +56,7 @@ import os, sys, pickle;
 from sklearn.preprocessing import LabelEncoder
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
+import pandas as pd
 
 
 # ## 3. Read Data from Source
@@ -57,12 +64,6 @@ from sklearn.metrics import accuracy_score
 # * 			Please provide the correct details and appropriate queries to read the data. **Note**: This is optional.
 # * 			The data can also be read using the functionality provided by the `gr` package.
 # * 			To read from s3 use: df = read_data('s3://file Path')
-
-# In[17]:
-
-
-pwd
-
 
 # In[ ]:
 
@@ -79,17 +80,54 @@ sql_query='select * from <<table>>'
 df.shape
 
 
-# In[19]:
+# In[5]:
+
+
+import os
+os.getcwd()
+
+
+# In[11]:
+
+
+os.chdir('/u01/HomeDir/cipuser/JUPYTER')
+
+
+# In[10]:
 
 
 def read_data(inpath):
     return pd.read_csv(inpath)
 
 
-# In[21]:
+# In[11]:
 
 
-df= read_data('Iris.csv')
+df= read_data('/u01/HomeDir/cipuser/JUPYTER/MC7/Iris.csv')
+
+
+# In[12]:
+
+
+df.head()
+
+
+# In[13]:
+
+
+df.info()
+
+
+# In[20]:
+
+
+df['SepalLengthCm'].plot(kind='hist')
+
+
+# In[7]:
+
+
+df['Species'].value_counts().plot(kind='bar')
 
 
 # ## 4. Exploratory Data Analysis 
@@ -109,6 +147,12 @@ exploratory_data_analysis(df)
 
 
 df.head()
+
+
+# In[1]:
+
+
+df.info()
 
 
 # ## 6. Feature Selection
