@@ -61,17 +61,23 @@ import pandas as pd
 # )
 # df.shape
 
-# In[6]:
+# In[1]:
 
 
 def read_data(inpath):
     return pd.read_csv(inpath)
 
 
-# In[10]:
+# In[2]:
 
 
 df = read_data('/u01/HomeDir/cipuser/JUPYTER/student')
+
+
+# In[3]:
+
+
+df.head()
 
 
 # ## 4. Exploratory Data Analysis 
