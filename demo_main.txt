@@ -1,7 +1,1 @@
-This is added in main branch
-New changes made
-<<<<<<< HEAD
-=======
-Line added in branch
-Checking in "changes to be comited.."
->>>>>>> demo_Developer1
+Hi this is a test for first commit to branch
