@@ -1,2 +1,0 @@
-Hi this is a test for first commit to branch
-This is a second test
