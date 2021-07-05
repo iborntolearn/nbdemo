@@ -21,7 +21,11 @@ initialize_metadata()
 # * 			Please ensure the 'Create Workspace' button is clicked.
 # * 			For more information, please refer to the User Guide.
 
+<<<<<<< HEAD
 # In[2]:
+=======
+# In[6]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 enter_metadata_information(1)
@@ -31,7 +35,11 @@ enter_metadata_information(1)
 # * 			The following cell can be used to import all the required python packages.
 # * 			Please import the `gr` package to use the pre-defined models and functionalities. 			For more information, please refer to the User Guide.
 
+<<<<<<< HEAD
 # In[3]:
+=======
+# In[7]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 
@@ -94,7 +102,11 @@ import logging
 import platform
 
 
+<<<<<<< HEAD
 # In[4]:
+=======
+# In[8]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 
@@ -113,18 +125,25 @@ logging.basicConfig(
 logger = logging.getLogger("cdms_pipeline")
 
 
+<<<<<<< HEAD
 # In[16]:
 
 
 print("this is a test")
 
 
+=======
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 # ### Save Model 
 # * 			The following method can be used to save the trained model in the model folder structure created. 
 # * 			The method parameter `trained_model` accepts the estimator(trained model) that is to be stored as model `pickle` file. 
 #  			The method parameter `filename` accepts a `string` containing the pickle file name.
 
+<<<<<<< HEAD
 # In[5]:
+=======
+# In[9]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 def save_model(trained_model, file_name):    
@@ -142,7 +161,11 @@ def save_model(trained_model, file_name):
 # * 			The following method can be used to load the saved model from the model folder structure. 
 # * 			The method parameter `filename` accepts a `string` containing the model pickle file name that is to be loaded.
 
+<<<<<<< HEAD
 # In[6]:
+=======
+# In[10]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 def load_model(file_name):    
@@ -158,7 +181,11 @@ def load_model(file_name):
     return model
 
 
+<<<<<<< HEAD
 # In[7]:
+=======
+# In[11]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 
@@ -259,7 +286,11 @@ def rename_keys(rename_dict, feature_important):
     return new_dict    
 
 
+<<<<<<< HEAD
 # In[8]:
+=======
+# In[12]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 class Preprocessing():
@@ -911,7 +942,11 @@ class Preprocessing():
         return model_df
 
 
+<<<<<<< HEAD
 # In[9]:
+=======
+# In[13]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 class UIModel():
@@ -1560,7 +1595,11 @@ class UIModel():
 #  			For Example: 
 #  `inputdata= { "outputpath" : "**/output/",  "inputfilepath" : "filepath" }`
 
+<<<<<<< HEAD
 # In[10]:
+=======
+# In[14]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 input_dict_train = {
@@ -1584,7 +1623,11 @@ input_dict_train = {
     }
 
 
+<<<<<<< HEAD
 # In[11]:
+=======
+# In[15]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 def train_model(inputdata: Dict):
@@ -1660,7 +1703,11 @@ def train_model(inputdata: Dict):
 train_model(input_dict_train)
 
 
+<<<<<<< HEAD
 # In[12]:
+=======
+# In[19]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 def get_prediction(inputdata: Dict):
@@ -1747,7 +1794,11 @@ def get_prediction(inputdata: Dict):
 
 # #### Please save the notebook after any change to ensure the correct code extraction.
 
+<<<<<<< HEAD
 # In[13]:
+=======
+# In[20]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 save_notebook()
@@ -1758,7 +1809,11 @@ save_notebook()
 # *********** PLEASE ENSURE TO EXECUTE THE BELOW SHELL BEFORE PROCEEDING FOR MODEL ONBOARDING ************ 
 # #### Please execute the following cell and provide the model independent and dependent variable information for creation of metadata file.
 
+<<<<<<< HEAD
 # In[14]:
+=======
+# In[16]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 enter_metadata_information(2)
@@ -1769,7 +1824,11 @@ enter_metadata_information(2)
 # * 			Before onboarding the model, please ensure that the programmable interface for both training and prediction are present in the notebook and working. 
 # * 			Please execution this cell will push a new version of the model to CDMS
 
+<<<<<<< HEAD
 # In[15]:
+=======
+# In[29]:
+>>>>>>> 61e9c5cc07419aa1dd723560ab45d51bfb00cd81
 
 
 metadata_dict['db_interaction'] = False
